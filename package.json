@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "build": "rollup -c"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,11 @@
   },
   "homepage": "https://github.com/mauleb/versionmanagement#readme",
   "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "rollup": "^1.25.1",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
     "semantic-release": "^15.13.27"
   }
 }
